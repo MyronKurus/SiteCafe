@@ -5877,23 +5877,32 @@ button.close {
   outline: 0;
   border: none; }
   .products .top-line button:hover {
-    border: 1px solid #333;
-    padding-top: 6px;
-    padding-bottom: 6px; }
+    color: #747474; }
 
 .products .top-line h4, .products .top-line button {
   display: inline-block; }
 
-.products .picture {
-  text-align: center;
-  margin-top: 20px;
-  height: 80px; }
-  .products .picture img {
+.products .product-item {
+  padding: 10px 20px; }
+  .products .product-item .picture {
+    text-align: center;
+    margin: 20px 0;
     height: 80px; }
+    .products .product-item .picture img {
+      height: 80px; }
+  .products .product-item .price {
+    color: #00B3E7;
+    font-weight: 600; }
 
-.products .price {
-  color: #00B3E7;
-  font-weight: 600; }
+.products .bord {
+  border-right: 1px dotted #333;
+  border-bottom: 1px dotted #333; }
+
+.products .bord:nth-child(4n) {
+  border-right: none; }
+
+.products .btm {
+  border-bottom: none; }
 
 .categories h5 {
   border: 1px solid #E7E6E3;
@@ -5915,3 +5924,22 @@ button.close {
       border-bottom: none; }
     .categories .cat-list li a {
       color: #333; }
+
+.categories .telephone {
+  position: relative;
+  background: -moz-linear-gradient(top, #5e6c70 0%, #303537 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #5e6c70 0%, #303537 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #5e6c70 0%, #303537 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  border-radius: 5px;
+  padding: 5px 30px;
+  color: #fff;
+  margin: 20px 0; }
+  .categories .telephone span {
+    font-weight: 700; }
+  .categories .telephone img {
+    position: absolute;
+    top: -15px;
+    right: 0; }

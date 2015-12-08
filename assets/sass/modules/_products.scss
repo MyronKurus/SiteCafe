@@ -20,9 +20,7 @@
             outline: 0;
             border: none;
             &:hover {
-                border: 1px solid #333;         
-                padding-top: 6px;
-                padding-bottom: 6px;
+                color: #747474;
             }
         }
         
@@ -33,17 +31,33 @@
         
     }
     
-    .picture {
+    .product-item {
+        padding: 10px 20px;
+        
+        .picture {
         text-align: center;
-        margin-top: 20px;
+        margin: 20px 0;
         height: 80px;
-        img {
-            height: 80px;
+            img {
+                height: 80px;
+            }
         }
+        .price {
+            color: #00B3E7;
+            font-weight: 600;
+        } 
     }
-    .price {
-        color: #00B3E7;
-        font-weight: 600;
+    
+    .bord {
+        border-right: 1px dotted #333;
+        border-bottom: 1px dotted #333;
+    }
+    
+    .bord:nth-child(4n) {
+        border-right: none;
+    }
+    .btm {
+        border-bottom: none;
     }
     
 }
