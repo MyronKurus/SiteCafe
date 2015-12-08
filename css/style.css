@@ -5876,6 +5876,10 @@ button.close {
   float: right;
   outline: 0;
   border: none; }
+  .products .top-line button:hover {
+    border: 1px solid #333;
+    padding-top: 6px;
+    padding-bottom: 6px; }
 
 .products .top-line h4, .products .top-line button {
   display: inline-block; }
@@ -5892,15 +5896,22 @@ button.close {
   font-weight: 600; }
 
 .categories h5 {
-  border: 1px solid #333;
+  border: 1px solid #E7E6E3;
   border-radius: 3px;
-  padding: 3px 0; }
+  padding: 10px;
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(#ffffff 0%, #f2f2f2 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -o-linear-gradient(#ffffff 0%, #f2f2f2 100%);
+  background: linear-gradient(#ffffff 0%, #f2f2f2 100%); }
 
 .categories ul {
   list-style-type: none;
   padding: 0; }
   .categories ul li {
-    padding: 10px;
-    border-bottom: 1px dotted #333; }
+    padding: 5px 10px;
+    border-bottom: 1px dotted #E7E6E3; }
     .categories ul li:last-child {
       border-bottom: none; }
+    .categories ul li a {
+      color: #333; }

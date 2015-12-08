@@ -19,6 +19,11 @@
             float: right;
             outline: 0;
             border: none;
+            &:hover {
+                border: 1px solid #333;         
+                padding-top: 6px;
+                padding-bottom: 6px;
+            }
         }
         
         h4, button {
