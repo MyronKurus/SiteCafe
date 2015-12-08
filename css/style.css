@@ -5943,3 +5943,13 @@ button.close {
     position: absolute;
     top: -15px;
     right: 0; }
+
+.categories .input-group input[type="text"] {
+  border-radius: 5px !important;
+  width: 100%; }
+
+.categories .input-group .subscribe-btn {
+  background: #00B3E7; }
+  .categories .input-group .subscribe-btn span {
+    color: #fff;
+    font-size: 250%; }
