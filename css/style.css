@@ -5905,13 +5905,13 @@ button.close {
   background: -o-linear-gradient(#ffffff 0%, #f2f2f2 100%);
   background: linear-gradient(#ffffff 0%, #f2f2f2 100%); }
 
-.categories ul {
+.categories .cat-list {
   list-style-type: none;
   padding: 0; }
-  .categories ul li {
+  .categories .cat-list li {
     padding: 5px 10px;
     border-bottom: 1px dotted #E7E6E3; }
-    .categories ul li:last-child {
+    .categories .cat-list li:last-child {
       border-bottom: none; }
-    .categories ul li a {
+    .categories .cat-list li a {
       color: #333; }
