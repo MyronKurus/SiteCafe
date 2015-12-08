@@ -1,6 +1,44 @@
-.picture {
-    height: 80px;
-    img {
-        height: 80px;
+.products {
+    .top-line {
+            h4 {
+            font-size: 24px;
+            font-weight: 600;
+            
+            span {
+                color: #00B3E7;
+            }
+        }
+        
+        button {
+            margin-top: 10px;
+            padding: 5px 25px;
+            color: #fff;
+            font-weight: 700;
+            background-color: #00B3E7;
+            border-radius: 5px;
+            float: right;
+            outline: 0;
+            border: none;
+        }
+        
+        h4, button {
+            display: inline-block;
+        }
+        
+        
     }
+    
+    .picture {
+        text-align: center;
+        margin-top: 20px;
+        height: 80px;
+        img {
+            height: 80px;
+        }
+    }
+    .price {
+        color: #00B3E7;
+        font-weight: 600;
+    }
+    
 }
