@@ -5944,6 +5944,9 @@ button.close {
     top: -15px;
     right: 0; }
 
+.categories .input {
+  margin: 0 auto; }
+
 .categories .input-group input[type="text"] {
   border-radius: 5px !important;
   width: 100%; }
@@ -5953,3 +5956,36 @@ button.close {
   .categories .input-group .subscribe-btn span {
     color: #fff;
     font-size: 250%; }
+
+.contacts .top-line h4 {
+  font-size: 24px;
+  font-weight: 600; }
+  .contacts .top-line h4 span {
+    color: #00B3E7; }
+
+.contacts .btns-grp button {
+  float: right;
+  margin-right: 15px; }
+
+.account .top-line h4 {
+  font-size: 24px;
+  font-weight: 600; }
+
+.account .top-line span {
+  color: #00B3E7; }
+
+.account .btns-grp button {
+  float: right;
+  margin-right: 15px; }
+
+.account h5 {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 15px 0; }
+
+.account .control-label {
+  font-weight: 500; }
+
+.account .star {
+  padding-top: 9px;
+  color: #00B3E7; }

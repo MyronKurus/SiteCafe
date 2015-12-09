@@ -1,0 +1,27 @@
+.account {
+    .top-line {
+        h4 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        span {
+            color: #00B3E7;
+        }
+    }
+    .btns-grp button {
+        float: right;
+        margin-right: 15px;
+    }
+    h5 {
+        font-weight: 700;
+        font-size: 16px;
+        margin: 15px 0;
+    }
+    .control-label {
+        font-weight: 500;
+    }
+    .star {
+        padding-top: 9px;
+        color: #00B3E7;
+    }
+}
