@@ -5893,6 +5893,8 @@ button.close {
   .products .product-item .price {
     color: #00B3E7;
     font-weight: 600; }
+  .products .product-item a {
+    font-size: 12px; }
 
 .products .bord {
   border-right: 1px dotted #333;
