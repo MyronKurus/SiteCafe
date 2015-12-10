@@ -1,4 +1,4 @@
-.products {
+.specials {
     .top-line {
             h4 {
             font-size: 24px;
@@ -34,7 +34,7 @@
     .product-item {
         padding: 10px 20px;
         min-height: 200px;
-        max-height: 220px;
+        max-height: 320px;
         overflow: hidden;
         
         .picture {
@@ -81,5 +81,4 @@
             border-bottom: none;
         }
     }
-    
 }
