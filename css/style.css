@@ -5851,7 +5851,7 @@ button.close {
     color: #00B3E7;
     font-weight: 600; }
   .products .product-item a {
-    font-size: 12px; }
+    font-size: 11px; }
 
 .products .bord {
   border-right: 1px dotted #333;
@@ -5948,3 +5948,30 @@ button.close {
 .account .star {
   padding-top: 9px;
   color: #00B3E7; }
+
+.whatsnew h5 {
+  font-weight: 700;
+  margin-bottom: 0; }
+
+.whatsnew .descr-item {
+  margin: 5px 0;
+  color: #8A8782; }
+
+.whatsnew .price {
+  outline: 0;
+  font-weight: 700;
+  padding: 5px 25px;
+  background: -webkit-linear-gradient(#ffffff 0%, #f2f2f2 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -o-linear-gradient(#ffffff 0%, #f2f2f2 100%);
+  background: linear-gradient(#ffffff 0%, #f2f2f2 100%); }
+
+.whatsnew .picture {
+  text-align: center;
+  vertical-align: baseline; }
+
+.whatsnew .item-block {
+  margin: 10px 0; }
+
+.whatsnew .nav-string {
+  margin: 20px 0; }

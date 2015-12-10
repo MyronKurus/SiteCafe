@@ -1,0 +1,32 @@
+.whatsnew {
+    h5 {
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .descr-item {
+        margin: 5px 0;
+        color: #8A8782;
+    }
+    .price {
+        outline: 0;
+        font-weight: 700;
+        padding: 5px 25px;
+        background: -webkit-linear-gradient(#ffffff 0%, #f2f2f2 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: -o-linear-gradient(#ffffff 0%, #f2f2f2 100%);
+        background: linear-gradient(#ffffff 0%, #f2f2f2 100%);
+    }
+    
+    .picture {
+        text-align: center;
+        vertical-align: baseline;
+    }
+    
+    .item-block {
+        margin: 10px 0;
+    }
+    
+    .nav-string {
+        margin: 20px 0;
+    }
+}
