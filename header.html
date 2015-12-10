@@ -3,55 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        .language{
-            background: -moz-linear-gradient(top, rgba(94,108,112,1) 0%, rgba(48,55,57,1) 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, rgba(94,108,112,1) 0%,rgba(48,55,57,1) 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, rgba(94,108,112,1) 0%,rgba(48,55,57,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        }
-        
-        .nav{
-            background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(242,242,242,1) 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(242,242,242,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        }
-        
-        .promo{
-            background: -moz-linear-gradient(top, rgba(94,108,112,1) 0%, rgba(47,54,56,1) 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, rgba(94,108,112,1) 0%,rgba(47,54,56,1) 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, rgba(94,108,112,1) 0%,rgba(47,54,56,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        }
-        
-        .round{
-            background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(205,205,205,1) 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(205,205,205,1) 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(205,205,205,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        }
-        
-        .search{
-            background: -moz-linear-gradient(top, rgba(98,212,246,1) 0%, rgba(39,177,238,1) 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, rgba(98,212,246,1) 0%,rgba(39,177,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, rgba(98,212,246,1) 0%,rgba(39,177,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            
-            color: #35b9ef;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">    
 </head>
 <body>
    <header class="header">
        <div class="container">
-       <div class="container">
-           <div class="col-md-3 col-ms-6">               
-              <a class="navbar-brand" href="#">
-                  <img src="images/logo.png" alt="">
-                  <h1>Sales<span>Point</span></h1>
-                  <p>The best store online</p>
-              </a>
+       <div class="row top">
+           <div class="col-md-3 col-ms-6">
+             <div class="logo">
+                <div class="logo-img">
+                    <img src="images/logo.png" alt="">
+                </div>
+                 <div class="logo-text">
+                    <a href="">Sales<span>Point</span></a>
+                    <p>The best store online</p>
+                 </div>
+             </div>
            </div>
            <div class="col-md-5 col-md-offset-3 col-ms-6">
                <p><a href="">Shopping cart</a> now in your cart 0 items</p>
-               <div class="language">
+               <div class="language clearfix">
                    <p>Language</p>
                    <form action="">
                        <select class="form-control" name="" id="">
@@ -66,14 +37,12 @@
                </div>
            </div>
        </div>       
-       <nav class="navbar navbar-default">
+       <nav class="navbar navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <span class="glyphicon glyphicon-align-justify"></span>
               </button>
             </div>
 
@@ -86,11 +55,11 @@
                 <li><a href="#">My Account</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
-              <form class="navbar-form navbar-right" role="search">
+              <form class="navbar-form navbar-right clearfix" role="search">
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Search">
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-blue"><span class="glyphicon glyphicon-search"></span></button>
               </form>
             </div><!-- /.navbar-collapse -->
           <!-- /.container-fluid -->
@@ -99,11 +68,60 @@
    </header>
    <div class="promo">
        <div class="container">
-           <div class="row">
+           <div class="row promo-content">
                <div class="col-md-3">
-                   
+                   <ul class="nav nav-tabs tabs-left"><!-- 'tabs-right' for right tabs -->
+                    <li class="active"><a href="#home" data-toggle="tab"><div class="round"><span class="glyphicon glyphicon-chevron-right"></span></div> 50% Discount insanity</a></li>
+                    <li><a href="#profile" data-toggle="tab"><div class="round"><span class="glyphicon glyphicon-chevron-right"></span></div> Premium products</a></li>
+                    <li><a href="#messages" data-toggle="tab"><div class="round"><span class="glyphicon glyphicon-chevron-right"></span></div> Exclusive offer</a></li>
+                    <li><a href="#settings" data-toggle="tab"><div class="round"><span class="glyphicon glyphicon-chevron-right"></span></div> Red hot stuff</a></li>
+                    <li><a href="#settings" data-toggle="tab"><div class="round"><span class="glyphicon glyphicon-chevron-right"></span></div> Summertime discount</a></li>
+                  </ul>
                </div>
-               <div class="col-md-9"></div>
+               <div class="col-md-9">
+                   <div class="tab-content clearfix">
+                      <div class="tab-pane active" id="home">                         
+                         <div class="tab-text">
+                             <h4>Huge discounts</h4>
+                             <p>and only one promo day!</p>
+                             <h2>Don't hesitate!</h2>
+                         </div>
+                         <div class="tab-img">
+                             <img src="images/promo.png" alt="">
+                         </div>            
+                      </div>
+                      <div class="tab-pane" id="profile">
+                           <div class="tab-text">
+                             <h4>Premium products</h4>
+                             <p>and only one promo day!</p>
+                             <h2>Don't hesitate!</h2>
+                         </div>
+                         <div class="tab-img">
+                             <img src="images/promo.png" alt="">
+                         </div> 
+                       </div>
+                      <div class="tab-pane" id="messages">
+                          <div class="tab-text">
+                             <h4>Exclusive offer</h4>
+                             <p>and only one promo day!</p>
+                             <h2>Don't hesitate!</h2>
+                         </div>
+                         <div class="tab-img">
+                             <img src="images/promo.png" alt="">
+                         </div> 
+                      </div>
+                      <div class="tab-pane" id="settings">
+                           <div class="tab-text">
+                             <h4>Huge discounts</h4>
+                             <p>and only one promo day!</p>
+                             <h2>Don't hesitate!</h2>
+                         </div>
+                         <div class="tab-img">
+                             <img src="images/promo.png" alt="">
+                         </div> 
+                       </div>
+                    </div>                   
+               </div>
            </div>
        </div>
    </div>

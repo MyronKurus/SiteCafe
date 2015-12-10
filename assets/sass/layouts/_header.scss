@@ -1,0 +1,279 @@
+.language{
+    @include gradient( rgba(94,108,112,1),rgba(48,55,57,1));
+    @include radius(5px);
+    padding: 5px 10px;
+    vertical-align: middle;
+    p{
+        float: left;
+        color: #ffffff;
+        font: 400 13px / 30px Arial;
+        margin: 0;
+    }
+    select{
+        position: relative;
+        float: left;
+        width: auto;
+        height: auto;
+        padding: 2px 10px;
+        margin: 5px 15px;
+        color: #9a9a9a;
+        font: 400 11px / 30px Arial;
+        &:last-child{
+            float: right;
+        }
+        &:after{
+            content: " ";
+            position: absolute;            
+            width: 22px;
+            height: 20px;
+            @include gradient(rgba(98,212,246,1), rgba(39,177,238,1));
+            left: 100px;
+            top: 110px; 
+        }
+    }
+}
+
+.header{
+    .top{
+        margin: 20px 0;
+    }
+}
+
+.logo{
+    position: relative;
+    .logo-img{
+        
+    }
+    .logo-text{
+        position: absolute;
+        left: 70px;
+        top: 5px;
+    a{
+        color: #121212;
+        font: 700 30px / 32px Myriad;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 10px 0;
+        span{
+            color: $lblue;
+            font: 30px / 32px Myriad;
+            text-transform: capitalize;
+        }
+    }
+    p{
+        margin: -7px 0;
+        color: #111017;
+        font: 400 12px / 32px Arial;
+    }
+}
+}
+
+.navigation{
+    @include gradient (rgba(255,255,255,1), rgba(242,242,242,1));
+    @include radius(5px);
+    border: 1px solid rgba(0,0,0,.15);
+    .navbar-header{
+        button{
+            padding: 5px;
+            span{
+                font-size: 30px;
+            }
+        }
+    }
+    li{
+        margin: 8px 0;
+        a{
+            padding: 3px 36px;
+            border-right: 1px solid rgba(0,0,0,.15);
+            color: #2f3638;
+            font: 16px / 32px Myriad;
+            &:hover{
+                background: none;
+                color: $lblue;
+            }
+            &:link{
+                background: none;
+            }
+        }
+        &:last-child a{
+            border: none;
+        }
+    }
+    .navbar-form{
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        .form-group{
+            input{
+                padding: 5px 10px;
+                color: #9a9a9a;
+                font: 400 11px  Arial;
+                height: auto;
+            }            
+        }
+        button{
+            @include gradient(rgba(98,212,246,1), rgba(39,177,238,1));
+            padding: 2px 10px;
+        }
+    }
+}
+
+.promo{
+    position: relative;
+    .container{
+        position: relative;
+        @include gradient(rgba(255,255,255,1), rgba(242,242,242,1));
+        @include radius (5px);
+        border: 1px solid rgba(0,0,0,.15);
+        padding: 15px;
+        .promo-content{
+            position: relative;
+            @include gradient(rgba(94,108,112,1), rgba(47,54,56,1))
+            @include radius(5px);
+            padding: 0;
+            margin: 0;
+            div{
+                padding: 0;
+            }
+        }
+        ul{
+            border: none;
+            .active{
+                border: none;
+                background: none;
+                a{
+                    background: none;
+                    border: none;
+                }
+            }
+            li{
+                display: inline-block;
+                border: none;
+                width: 100%;
+                margin: 0;
+                vertical-align: middle;
+                a{
+                    border-radius: 0;
+                    border: none;
+                    width: 100%;
+                    @include gradient(rgba(255,255,255,1), rgba(205,205,205,1));
+                    padding: 16px 10px;
+                    color: #2f3638;
+                    font: 20px / 32px Myriad;
+                    text-transform: capitalize;
+                    transition: 1s;
+                    &:hover{
+                        border: none;
+                    }
+                    &:focus{
+                        background: none;
+                        border: none;
+                        color: #ffffff;
+                    }
+                }
+                &:first-child a{
+                    border-radius: 5px 0 0 0;
+                }
+                &:last-child a{
+                    border-radius: 0 0 0 5px;
+                } 
+            }
+        }
+    }
+}
+
+.round{
+    position: relative;
+    display: inline-block;
+    @include gradient(rgba(255,255,255,1), rgba(205,205,205,1));
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    vertical-align: middle;
+    text-align: center;
+    span{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        color: $lblue;
+        font-size: 16px;
+    }
+}
+
+.tab-content{
+    padding: 20px;
+}
+
+.tab-pane{
+    text-align: right;
+    .tab-img{
+        margin: 20px;
+        display: inline-block;
+        img{
+            width: 100%;
+        }
+    }
+    .tab-text{
+        position: absolute;
+        margin: 84px 35px;
+        text-align: left;
+        h4{
+            color: #ffffff;
+            font: 700 28px / 22px Myriad;
+        }
+        p{
+            color: #ffffff;
+            font: 20px / 22px Myriad;
+        }
+        h2{
+            color: #ffffff;
+            font: 700 44px / 26px Myriad;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .navigation{
+        li{
+            a{
+                padding: 3px 16px;
+            }
+        }
+        .navbar-form{
+            position: relative;
+            display: block;
+            margin: 20px auto;
+            padding: 0;
+            .form-group{
+                float: left;
+                width: 70%;
+                margin: 0 10px;
+            }
+            button{
+                float: left;
+            }
+        }
+    }
+    .promo{
+        .tab-content{
+            .tab-pane{
+                img{
+                    width: 100%;
+                }
+                .tab-text{
+                    margin: 50px 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 400px){
+    .tab-text{
+        margin: 50px 20px;
+    }
+}
