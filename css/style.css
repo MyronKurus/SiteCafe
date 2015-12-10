@@ -6101,8 +6101,7 @@ button.close {
 
 .products .product-item {
   padding: 10px 20px;
-  min-height: 200px;
-  max-height: 220px;
+  height: 200px;
   overflow: hidden; }
   .products .product-item .picture {
     text-align: center;
@@ -6126,7 +6125,7 @@ button.close {
 .products .btm {
   border-bottom: none; }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .products .bord {
     border-bottom: 1px dotted #333; }
   .products .bord:nth-child(2n) {
@@ -6145,15 +6144,30 @@ button.close {
   background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
 
-.categories .cat-list {
+.categories .panel .panel-heading {
+  background: #fff; }
+
+.categories .panel {
+  border: none;
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.categories .panel a {
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.categories .panel-body {
+  padding: 5px; }
+
+.categories .drop-menu {
   list-style-type: none;
   padding: 0; }
-  .categories .cat-list li {
+  .categories .drop-menu li {
     padding: 5px 10px;
     border-bottom: 1px dotted #E7E6E3; }
-    .categories .cat-list li:last-child {
+    .categories .drop-menu li:last-child {
       border-bottom: none; }
-    .categories .cat-list li a {
+    .categories .drop-menu li a {
       color: #333; }
 
 .categories .telephone {
@@ -6297,7 +6311,7 @@ button.close {
 
 .specials .product-item {
   padding: 10px 20px;
-  min-height: 200px;
+  min-height: 260px;
   max-height: 320px;
   overflow: hidden; }
   .specials .product-item .picture {
@@ -6322,7 +6336,7 @@ button.close {
 .specials .btm {
   border-bottom: none; }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .specials .bord {
     border-bottom: 1px dotted #333; }
   .specials .bord:nth-child(2n) {

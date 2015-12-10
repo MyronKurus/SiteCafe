@@ -33,14 +33,15 @@
     
     .product-item {
         padding: 10px 20px;
-        min-height: 200px;
+        min-height: 260px;
         max-height: 320px;
         overflow: hidden;
         
         .picture {
-        text-align: center;
-        margin: 20px 0;
-        height: 80px;
+            text-align: center;
+            margin: 20px 0;
+            height: 80px;
+            
             img {
                 height: 80px;
             }
@@ -67,7 +68,7 @@
         border-bottom: none;
     }
     
-    @media (max-width: 767px) { 
+    @media (max-width: 768px) { 
         
         .bord {
             border-bottom: 1px dotted #333;

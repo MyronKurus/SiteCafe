@@ -5,7 +5,26 @@
         padding: 10px;
         @include gradient (#ffffff, #f2f2f2);
     }
-    .cat-list {
+    
+    .panel .panel-heading {
+//        border: none!important;
+        background: #fff
+    }
+    
+    .panel {
+        border: none;
+        padding: 0!important;
+        margin: 0!important;
+    }
+    .panel a {
+        padding: 0!important;
+        margin: 0!important;
+    }
+    
+    .panel-body {
+        padding: 5px;
+    }
+    .drop-menu {
         list-style-type: none;
         padding: 0;
         li {
@@ -56,5 +75,5 @@
             }
         }
     }
-      
+
 }

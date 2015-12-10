@@ -33,8 +33,8 @@
     
     .product-item {
         padding: 10px 20px;
-        min-height: 200px;
-        max-height: 220px;
+        height: 200px;
+
         overflow: hidden;
         
         .picture {
@@ -67,7 +67,7 @@
         border-bottom: none;
     }
     
-    @media (max-width: 767px) { 
+    @media (max-width: 991px) { 
         
         .bord {
             border-bottom: 1px dotted #333;
