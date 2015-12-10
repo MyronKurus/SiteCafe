@@ -24,4 +24,8 @@
         padding-top: 9px;
         color: #00B3E7;
     }
+      .btn {
+        @include gradient(rgba(98,212,246,1), rgba(39,177,238,1));
+        color: #fff;
+    }
 }
