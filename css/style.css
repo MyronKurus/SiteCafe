@@ -6100,7 +6100,9 @@ button.close {
   display: inline-block; }
 
 .products .product-item {
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  max-height: 200px;
+  overflow: hidden; }
   .products .product-item .picture {
     text-align: center;
     margin: 20px 0;
