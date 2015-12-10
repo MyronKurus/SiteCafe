@@ -17,4 +17,8 @@
             float: right;
             margin-right: 15px;
         }
+    .btn {
+        @include gradient(rgba(98,212,246,1), rgba(39,177,238,1));
+        color: #fff;
+    }
 }
