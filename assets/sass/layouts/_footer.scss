@@ -1,0 +1,252 @@
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+
+
+.slider{
+    
+    .customNavigation{
+        position: relative;
+        .prev{
+            position: absolute;
+            left: 10px;
+            top: 20px;
+        }
+        .next{
+            position: absolute;
+            right: 10px;
+            top: 20px;
+        }
+        #owl-demo{
+            margin: auto;
+            width: 90%;
+            .item{
+                text-align: center;
+                vertical-align: middle;
+                img{
+                    display: inline-block;
+                }
+                .slider-inside{
+                    display: inline-block;
+                    text-align: left;
+                    p{
+                        color: #111017;
+                        font: 700 13px / 20px Arial;
+                    }
+                    a{
+                        color: $lblue;
+                        font: 700 13px / 20px Arial;
+                    }
+                }
+            }
+        }        
+    }
+    h2{
+        color: #2f3638;
+        font: 24px / 32px Myriad;
+        text-decoration: none;
+        margin: 20px 40px;
+        span{
+            color: $lblue;
+            font: 24px / 32px Myriad;
+            text-transform: capitalize;
+        }
+    }
+}
+
+
+
+.owl-controls, .clickable {
+    display: none!important;
+    position: relative;
+}
+.customNavigation{
+    .prev{
+        
+        display: block;
+        top: 20px;
+        left: 0px;
+    }
+    .next{
+        position: absolute;
+        top: 20px;
+        right: 0px;
+    }
+}
+
+.footer{
+    text-align: center;
+    .navbar{
+        margin: 30px auto;
+        @include gradient( rgba(94,108,112,1),rgba(48,55,57,1));
+        @include radius(5px);
+        .nav{
+            width: 100%;
+            li{
+                width: 20%;
+                margin: 10px 0;
+                a{
+                    color: #bfcbce;
+                    padding: 0;
+                    font: 400 13px / 30px Arial;
+                    border-right: 1px solid #bfcbce;
+                    transition: 1s;
+                    &:hover{
+                        color: $lblue;
+                    }
+                    }
+                    &:last-child a{
+                        border: none;
+                    }
+            }
+            
+        }
+    }
+    p{
+        color: #111017;
+        font: 400 13px / 20px Arial;
+        a{
+            color: #26b0ed;
+            font: 400 13px / 20px Arial;
+            text-decoration: 1px solid #26b0ed;
+        }
+    }
+}
+@media (max-width: 767px){
+    .slider{
+        .customNavigation{
+            #owl-demo{
+                width: 80%;
+                .item{
+                    text-align: center;
+                }
+            }
+        }        
+        
+    }
+    .footer{
+        .navbar{
+            .nav{
+                margin: 0;
+                li{
+                    width: 100%;
+                    a{
+                    width: 100%;
+                    margin: 0;
+                    border: none;
+                }
+                }
+                
+              }
+       }
+    }
+}
+//
+//@media (min-width: 768px){
+//    .footer{
+//        .navbar{
+//            .nav{
+//                a{
+//                    padding: 0 48px;
+//                }
+//
+//            }
+//        }
+//    }
+//}
+//
+//
+//@media (min-width: 992px){
+//    .footer{
+//        .navbar{
+//            .nav{
+//                a{
+//                    padding: 0 70px;
+//                }
+//
+//            }
+//        }
+//    }
+//}
+//
+//@media (min-width: 1200px){
+//    .footer{
+//        .navbar{
+//            .nav{
+//                li{
+//                    width: 20%;
+//                }
+//
+//            }
+//        }
+//    }
+//}
+
